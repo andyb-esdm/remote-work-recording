@@ -1,0 +1,7 @@
+<h2>Work Records</h2>
+
+<div class="list-group">
+  <a *ngFor="let workRecord of workRecords" [routerLink]="['/work-record-form', workRecord.id]" class="list-group-item">
+    {{workRecord.id}}: {{workRecord.description}}
+  </a>
+</div>
